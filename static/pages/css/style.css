@@ -1,0 +1,458 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+/* Mobile - Vertical */
+
+* {
+box-sizing: border-box;
+padding:0;
+margin:0;
+}
+
+/* Color Variables */
+:root {
+--primary: #99cc33;
+--dark:#212b0c;
+--light:#f4f4f4;
+
+}
+
+body {
+font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+font-size: 1.75rem;
+line-height: 2rem;
+}
+
+.info h1 {
+    font-size: 1.5rem;
+}
+
+.info p {
+    line-height: 1.5rem;
+}
+
+p {
+line-height: 1.75rem;
+}
+
+/* Utilities */
+
+
+.btn {
+align-self: flex-start;
+display: inline-block;
+text-decoration: none;
+background: var(--dark);
+border: 2px solid var(--dark);
+padding: .75rem;
+border-radius: 3px;
+color:var(--light);
+}
+
+.btn:hover {
+background: var(--primary);
+}
+
+.spacer {
+min-height: 2px;
+background-color: var(--primary);
+}
+
+/* Main nav */
+
+#main-nav {
+background: var(--dark);
+padding: .25rem 1rem;
+z-index: 2;
+}
+
+#main-nav .container {
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+justify-content: center;
+align-items: center;
+
+}
+#main-logo{
+width:150px;
+padding: 1.5rem  .5rem .5rem .5rem;
+}
+
+#main-menu {
+display:flex;
+padding: .5rem;
+list-style: none;
+}
+
+#main-menu a {
+text-decoration: none;
+color: white;
+padding: .25rem .5rem;
+border-radius: 3px;
+}
+
+#main-menu a:hover {
+background: var(--primary);
+}
+
+/* Header */
+
+header {
+}
+
+header .container {
+height: 100vh;
+display: flex;
+flex-direction:column;
+justify-content: space-evenly;
+padding: 3rem 1.5rem;
+}
+
+
+#home-header {
+background: var(--primary);
+}
+
+/* Section Generic */
+section .container {
+padding: 0px;
+}
+
+.hero {
+width: 100%;
+min-height: 320px;
+}
+
+.info {
+padding: 1.5rem;
+display: flex;
+flex-direction: column;
+min-height: 400px;
+justify-content: space-evenly;
+}
+
+
+/* Web */
+
+#web {
+background: var(--dark);
+color: var(--light);
+}
+
+#web .hero {
+background: url('../img/web-xs.png') no-repeat bottom center/cover ;
+
+}
+
+#web h1 {
+color: var(--primary); 
+
+}
+
+#web .btn {
+background: var(--primary);
+border-radius: 5px;
+
+}
+
+
+/* Graphic */
+
+
+#graphic .hero {
+background: url('../img/graphic-xs.png') no-repeat bottom center/cover ;
+}
+
+
+/* 3D */
+
+
+#three-d .hero {
+background: url('../img/vr-girl-vertical.png') no-repeat bottom center/cover ;
+}
+
+
+#contact-info {
+background: var(--dark);
+color: #666;
+}
+
+#contact-info .container {
+padding: 1rem;
+}
+
+#contact-info .box {
+min-height: 150px;
+margin: .75rem .75rem;
+text-align: center;
+border: 1.5px dashed #666;
+border-radius: 3px;
+padding: 1.5rem;
+}
+
+
+
+
+#contact-info i {
+margin: 1.5rem;
+text-align: center;
+line-height: 1.5rem;
+}
+
+ .box p {
+    font-size: .75rem;
+    line-height: 1rem;
+}
+
+.box h4 {
+    font-size: 1.25;
+    line-height: 1.25rem;
+    }
+
+
+
+#copyright {
+background: #192009;
+color: #666;
+display: flex; 
+}
+
+#copyright .container {
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-content: center;
+padding: 1.5rem 1rem;
+}
+
+#copyright p {
+padding: 0;
+line-height: 1.25rem;;
+text-align: center;
+}
+
+/* Above 568px */
+
+@media screen and (min-width: 568px) {
+    #main-nav .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header {
+
+    }
+
+    header .container {
+        padding: 0 1.5rem;;
+    }
+
+    header h1 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    section {
+        min-height: 50vh;
+        display: flex;
+        justify-content: flex-start;
+        
+    }
+
+    section .container {
+    min-width: 100%;
+    display: flex;
+  
+    }
+
+
+    .hero {
+    width: 50%;
+    }
+
+    .info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    }
+
+    .btn {
+        margin:0;
+    }
+
+    p {
+        line-height:1.25rem;
+    }
+
+    
+
+    #web .hero {
+    background: url('../img/web-s.png') no-repeat center right/cover ;
+    }
+
+    #graphic .hero {
+    background: url('../img/graphic-s.png') no-repeat center right/cover;
+    }
+
+    #three-d .hero {
+    background: url('../img/3d-s.png') no-repeat center right/cover;
+    }
+
+    #copyright .container {
+        flex-direction: row;
+    justify-content: space-between;
+    }
+
+}
+
+
+
+@media screen and (min-width: 768px){ 
+    header h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    header p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    header .container {
+        padding: 0rem 3rem;
+    }
+
+    header h1 {
+        width: 75%;
+    }
+
+    section .container {
+        
+    }
+
+    .info h1 {
+        font-size: 1.85rem;
+        line-height: 2.25rem;
+    }
+
+    section .info {
+        padding-right: 3rem;
+    }
+
+    .info p {
+        line-height: 2rem;
+    }
+
+    section .container .hero {
+        min-height: 100%;
+        
+        
+    }
+
+}
+
+
+/* Above 1024 */
+@media screen and (min-width: 1024px){ 
+
+    section .container{
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    } 
+
+    .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    }
+
+    .info h1 {
+        font-size: 2.25rem;
+    }
+
+    .info p {
+       
+    }
+
+    .info .btn {
+    align-self: flex-start;
+    }
+
+   
+    header h1 {
+        font-size: 5rem;
+        line-height: 5rem;
+        max-width: 70%;
+    }
+
+    header p {
+        max-width: 70%;
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+
+
+
+    #contact-info .container {
+        width: 100%;
+        display: flex;        
+    }
+
+    #contact-info .container div {
+        flex:1;
+    }
+
+}
+
+/* Above 1366 */
+
+@media screen and (min-width: 1366px){ 
+    #main-nav .container {
+    max-width: 100%;
+    margin: auto;
+    }
+
+    section .container {
+        min-height: 100vh;
+    }
+
+    #contact-info .container{
+        flex-direction: row;
+        justify-content: center;   
+    }
+
+}
+
+@media screen and (min-width: 1920px){ 
+    header h1 {
+        font-size: 6rem;
+        line-height: 6rem;
+        
+    }
+
+    .info h1 {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+       
+    }
+
+    .info h1, .info p {
+        padding-right: 30%;
+    }
+}
+
+
+
+
+
+
+
+
