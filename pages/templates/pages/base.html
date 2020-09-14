@@ -21,11 +21,12 @@
 <!-- Main Navigation -->
     <nav id="main-nav">
         <div class="container">
-            <a href="#">
+            <a href="{% url 'pages_home' %}">
                 <img src="{% static 'pages/img/bobbitt_inc-primary.svg' %}" alt="Bobbitt Inc" id="main-logo">
             </a>
-    
+            
             <ul id="main-menu">
+                <li><a href="{% url 'portfolio_home' %}">Portfolio</a></li>
                 <li><a href="#three-d">3d</a></li>
                 <li><a href="#web">Web</a></li>
                 <li><a href="#graphic">Graphic</a></li>

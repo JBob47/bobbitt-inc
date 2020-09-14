@@ -35,6 +35,7 @@ INSTALLED_APPS = [
 
     # Bobbitt Inc
     'pages',
+    'portfolio',
 
     # Vendor
     
