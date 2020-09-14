@@ -1,39 +1,7 @@
+{% extends 'pages/base.html' %}
 {%load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- Fav_Icon -->
-    <link rel="icon"type="image/png" href="{% static 'pages/img/bobbitt-inc-favicon.png' %}">
-
-    <!-- My Style -->
-    <link rel="stylesheet" href="{% static 'pages/css/style.css' %}">
-
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/59876aa511.js" crossorigin="anonymous"></script>
-    <title>Bobbitt Inc | Welcome</title>
-
-</head>
-<body>
-<!-- Main Navigation -->
-    <nav id="main-nav">
-        <div class="container">
-            <a href="#">
-                <img src="{% static 'pages/img/bobbitt_inc-primary.svg' %}" alt="Bobbitt Inc" id="main-logo">
-            </a>
-    
-            <ul id="main-menu">
-                <li><a href="#three-d">3d</a></li>
-                <li><a href="#web">Web</a></li>
-                <li><a href="#graphic">Graphic</a></li>
-                <li><a href="#contact-info">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
+    {% block content %}
     <!-- Header Home -->
     <header id="home-header">
         <div class="container">
@@ -105,81 +73,6 @@
 
     <div class="spacer"></div>
 
-    
+    {% endblock %}
 
-    <!-- Footer -->
-    <footer>
-            <div id="contact-info">
-                <div class="container">
-                    <div class="box">
-                        <i class="fas fa-mobile-alt fa-3x"></i>
-                        <div class="">
-                            <h4>Telephone</h4>
-                            <p>Call or Text</p>
-                            
-                            <p>704.658.5435</p>
-                           
-                        </div>
-                       
-                    </div>
-                    <div class="box">
-                        <i class="fas fa-map-marker-alt fa-3x"></i>
-                        <div class="">
-                            <h4>Mailing Address</h4>
-                           
-                            <p>386 Wood Bridge Rd
-                                <br>
-                                Statesvelle | NC
-                            </p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <i class="fas fa-home fa-3x"></i>
-                        <div class="">
-                            <h4>Office Hours</h4>
-                            <p>
-                                Monday - Friday 
-                            </p>
-                            <p>
-                                9am - 5pm
-                            </p>
-                            <p>By Appointment Only</p>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <i class="fas fa-envelope-open-text fa-3x"></i>
-                        <div class="">
-                            <h4>Email Address</h4>
-                          
-                            <p>
-                                justin@bobbitt-inc.com
-                            </p>
-                            
-                        </div>
-                    </div>
-                  
-                    </div>
-                </div>
-            </div>
-       
-
-        <div id="copyright">
-            <div class="container">
-                <p>&copy; 2020 Bobbitt Inc</p>
-                <p>All Rights Reserved</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- JQuery CDN -->
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-
-  <!-- Local JS File -->
-  <script src="{% static 'pages/js/main.js' %}"></script>
-
-</body>
-</html>
+   
