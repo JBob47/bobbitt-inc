@@ -9,10 +9,13 @@ padding:0;
 margin:0;
 }
 
+
+/* --dark:#212b0c; */
+
 /* Color Variables */
 :root {
 --primary: #99cc33;
---dark:#212b0c;
+--dark:#24261e;
 --light:#f4f4f4;
 
 }
@@ -40,21 +43,31 @@ line-height: 1.75rem;
 
 /* Utilities */
 
-
 .btn {
 align-self: flex-start;
 display: inline-block;
 text-decoration: none;
 background: var(--dark);
-border: 2px solid var(--dark);
+border: 1px solid var(--dark);
 padding: .75rem;
 border-radius: 3px;
 color:var(--light);
 }
 
-.btn:hover {
+.btn:hover, .btn-light:hover {
 background: var(--primary);
 }
+
+.btn-light {
+    display: inline-block;
+    text-decoration: none;
+    background: var(--light);
+    border: 1px solid var(--dark);
+    padding: .75rem;
+    border-radius: 3px;
+    color:var(--dark);
+
+    }
 
 .spacer {
 min-height: 2px;
@@ -359,6 +372,84 @@ text-align: center;
 }
 
 
+/* Portfolio Styles */
+
+.portfolio_catagories {
+    width: 1000px;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio_catagories a{
+    margin: 5px;
+}
+
+
+.portfolio_headline{
+    width: 1000px;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.portfolio_description{
+    width: 1000px;
+    margin: auto;
+    padding: 30px;
+}
+.portfolio_gallery{
+    margin: auto;
+    padding: 20px;
+    width: 1000px;
+    background:#fff;en;
+    min-height: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between ;
+}
+
+
+
+.portfolio_project :first-child:hover{
+    background-image:
+    linear-gradient(to bottom, rgba(255, 255,255, 0), rgba(0, 0, 0, .9)),
+    url(../../portfolio/img/progressive_tower_thumb.png);
+}
+
+.portfolio_item{
+    height: 175px;
+    width: 300px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0px;
+    /* background-color:red; */
+    background: url(../../portfolio/img/progressive_tower_thumb.png); 
+    border-radius: 5px;
+    border: 1px solid #000;
+    /* background: url('../img/progressive_tower_thumb.png') no-repeat center/cover ; */
+}
+
+
+.portfolio_thumb {
+    text-align: center;
+    margin: auto;
+    object-fit: fill;
+    padding:0px;
+
+}
+
+.portfolio_thumb_title {
+
+    margin-bottom: 30px;
+}
+
+
+
 /* Above 1024 */
 @media screen and (min-width: 1024px){ 
 
@@ -448,6 +539,7 @@ text-align: center;
         padding-right: 30%;
     }
 }
+
 
 
 

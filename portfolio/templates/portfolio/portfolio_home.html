@@ -1,7 +1,123 @@
 {% extends 'pages/base.html' %}
+{% load static %}
 
 {% block content%}
-<div style="min-height: 600px; padding: 50px;">
-    <h1>Hello from Portfolio</h1>
+<div class="portfolio_catagories">
+    <a class = "btn-light" href="#">All</a>
+    <a class = "btn-light" href="#">Web Design</a>
+    <a class = "btn-light" href="#">3D Design</a>
+    <a class = "btn-light" href="#">Graphic Design</a>
+    <a class = "btn-light" href="#">Branding</a>
+    <a class = "btn-light" href="#">Photoshop</a>
+    <a class = "btn-light" href="#">Illustrator</a>
+    <a class = "btn-light" href="#">InDesign</a>
+    <a class = "btn-light" href="#">Blender</a>
+    <a class = "btn-light" href="#">Sketchup</a>
+    <a class = "btn-light" href="#">Solid Edge</a>
 </div>
+
+
+<div class="portfolio_headline">
+    <h1>All Work</h1>
+</div>
+
+<div class="portfolio_description">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio libero itaque quae natus, deserunt dolorem fugit, saepe ut ratione, dolores vero molestiae adipisci et ipsa aliquid similique ipsum quas tenetur?</p>
+</div>
+
+<!-- Portfolio Gallery -->
+<div class="portfolio_gallery">
+
+
+
+    <!-- Element -->
+    <div class="portfolio_project">
+        <a href="{% url 'pages_home' %}">
+            <div class="portfolio_item">
+                <!-- <img class="portfolio_thumb" src="{% static 'portfolio/img/progressive_tower_thumb.png' %}" alt="Progressive_Thumb" > -->
+            </div>
+        </a>
+        <div class="portfolio_thumb_title">
+            Progressive Tower
+        </div>
+    </div>
+    
+    
+    <!-- End Element -->
+    <!-- Element -->
+    <div class="portfolio_project">
+        <a href="#">
+            <div class="portfolio_item">
+                <!-- <img class="portfolio_thumb" src="{% static 'portfolio/img/progressive_tower_thumb.png' %}" alt="Progressive_Thumb" > -->
+            </div>
+        </a>
+        <div class="portfolio_thumb_title">
+            Progressive Tower
+        </div>
+    </div>
+    
+    
+    <!-- End Element -->
+    <!-- Element -->
+    <div class="portfolio_project">
+        <a href="#">
+            <div class="portfolio_item">
+                <!-- <img class="portfolio_thumb" src="{% static 'portfolio/img/progressive_tower_thumb.png' %}" alt="Progressive_Thumb" > -->
+            </div>
+        </a>
+        <div class="portfolio_thumb_title">
+            Progressive Tower
+        </div>
+    </div>
+    
+    
+    <!-- End Element -->
+    <!-- Element -->
+    <div class="portfolio_project">
+        <a href="#">
+            <div class="portfolio_item">
+                <!-- <img class="portfolio_thumb" src="{% static 'portfolio/img/progressive_tower_thumb.png' %}" alt="Progressive_Thumb" > -->
+            </div>
+        </a>
+        <div class="portfolio_thumb_title">
+            Progressive Tower
+        </div>
+    </div>
+    
+    
+    <!-- End Element -->
+    <!-- Element -->
+    <div class="portfolio_project">
+        <a href="#">
+            <div class="portfolio_item">
+                <!-- <img class="portfolio_thumb" src="{% static 'portfolio/img/progressive_tower_thumb.png' %}" alt="Progressive_Thumb" > -->
+            </div>
+        </a>
+        <div class="portfolio_thumb_title">
+            Progressive Tower
+        </div>
+    </div>
+    
+    
+    <!-- End Element -->
+    <!-- Element -->
+    <div class="portfolio_project">
+        <a href="#">
+            <div class="portfolio_item">
+                <!-- <img class="portfolio_thumb" src="{% static 'portfolio/img/progressive_tower_thumb.png' %}" alt="Progressive_Thumb" > -->
+            </div>
+        </a>
+        <div class="portfolio_thumb_title">
+            Progressive Tower
+        </div>
+    </div>
+    
+    
+    <!-- End Element -->
+    </div>
+        
+</div>
+    
+
+
 {% endblock %}
