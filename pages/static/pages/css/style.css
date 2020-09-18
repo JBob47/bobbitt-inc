@@ -405,7 +405,7 @@ text-align: center;
     margin: auto;
     padding: 20px;
     width: 1000px;
-    background:#fff;en;
+    background:#fff;
     min-height: 300px;
     display: flex;
     flex-direction: row;
@@ -422,25 +422,25 @@ text-align: center;
 }
 
 .portfolio_item{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 175px;
     width: 300px;
     overflow: hidden;
     margin: 0;
     padding: 0px;
     /* background-color:red; */
-    background: url(../../portfolio/img/progressive_tower_thumb.png); 
-    border-radius: 5px;
-    border: 1px solid #000;
+    /* background: url(../../portfolio/img/progressive_tower_thumb.png);   */
+    border-radius: 3px;
+    border: 0px solid #000;
     /* background: url('../img/progressive_tower_thumb.png') no-repeat center/cover ; */
 }
 
 
 .portfolio_thumb {
-    text-align: center;
-    margin: auto;
-    object-fit: fill;
-    padding:0px;
-
+    box-sizing: content-box;
 }
 
 .portfolio_thumb_title {

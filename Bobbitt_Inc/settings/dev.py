@@ -7,3 +7,4 @@ SECRET_KEY = 'localdevelopmentsecretkeystring'
 DEBUG = True
 
 ALLOWED_HOSTS = [ ]
+

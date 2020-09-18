@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body{
+            font-family: montserrat;
+            margin:0;
+            padding:0;
+        }
+        .container{
+            background: rgb(255, 255, 255);
+            width: 100%;
+        }
+        .gallery{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-content: flex-start;
+            padding: 30px;
+            width: 1000px;
+            background: rgb(255, 255, 255);
+            margin: auto;
+            min-height: 400px;
+        }
+        .gallery_item{
+            width: 300px;
+            margin: 10px;
+        }
+        .gallery_thumb{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            min-height: 175px;
+            height:175px;
+            border: 0px solid red;
+            border-radius:3px;
+            
+            background-image:attr(data-image-src url);
+            
+            background-position: center;
+            background-size: 100%;
+            overflow: hidden; 
+            margin: 0;
+            transition: background-size 1s, filter 1s;
+            
+        }
+
+        .gallery_thumb:hover{
+            background-size: 105%;
+            filter: blur(0px);
+            background-image: attr(data-image-src url);
+            
+        }
+
+  
+    
+
+     
+
+        .gallery_item_footer {
+            min-height: 40px;
+            width: 100%;
+            align-self:flex-end;
+            background-color: rgb(228, 228, 228,.7);
+            border-top: 1px solid #99cc33;
+            padding: 5px;
+            /* visibility: hidden; */
+            opacity: 0;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            margin:0px;
+            transition: opacity 1s;
+        
+        }
+
+        .gallery_item:hover .gallery_item_footer{
+            opacity: 1;
+        }
+
+        
+        .gallery_item_footer p{
+            margin: 0px;
+            padding:0px;
+            color:#000;
+        }
+
+        .gallery_item_footer p::before{
+            /* content: "\2192"; */
+        }
+
+        .software_icons{
+            display:flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            width: 100%;
+        }
+
+        .software_icons img {
+            align-self: center;
+            width: 20px;
+            height: 20px;
+            transition: width .25s ease-in-out, height .25s ease-in-out;
+        }
+
+        .software_icons img:hover {
+            width: 40px;
+            height:40px;
+        }
+
+        
+
+
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="gallery">
+            <!-- Gallery Item -->
+            <div class="gallery_item">
+                
+                <div class="gallery_thumb" data-image-src="https://images.unsplash.com/photo-1553531888-a5892402adce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1700&q=80">
+                   
+                    <div class="gallery_item_footer">
+                        <dic class="software_icons">
+                            <img src="img\PS_exman_24px.png" alt="">
+                            <img src="img\AI_Icon.png" alt="">
+                            <img src="img\PS_exman_24px.png" alt="">
+                            <img src="img\PS_exman_24px.png" alt="">
+                        </dic>
+                    </div>
+                </div>
+            </div>
+            <!-- End Gallery Item -->
+
+            <!-- Gallery Item -->
+            <div class="gallery_item">
+                
+                <div class="gallery_thumb" data-image-src="https://images.unsplash.com/photo-1599486384103-4af6a5d7f630?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80">
+                   
+                    <div class="gallery_item_footer">
+                        <p>Item Title</p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- End Gallery Item -->
+
+            <div class="gallery_item">
+                
+                <div class="gallery_thumb" data-image-src="https://images.unsplash.com/photo-1576836165612-8bc9b07e7778?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
+                   
+                    <div class="gallery_item_footer">
+                        <p>Visual Basic App</p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- End Gallery Item -->
+
+            <!-- Gallery Item -->
+            <div class="gallery_item">
+                
+                <div class="gallery_thumb" data-image-src="https://images.unsplash.com/photo-1553531888-a5892402adce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1700&q=80">
+                   
+                    <div class="gallery_item_footer">
+                        <p>Item Title</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End Gallery Item -->
+
+            <!-- Gallery Item -->
+            <div class="gallery_item">
+                
+                <div class="gallery_thumb" data-image-src="https://images.unsplash.com/photo-1599486384103-4af6a5d7f630?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80">
+                   
+                    <div class="gallery_item_footer">
+                        <p>Item Title</p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- End Gallery Item -->
+
+            <div class="gallery_item">
+                
+                <div class="gallery_thumb" data-image-src="https://images.unsplash.com/photo-1576836165612-8bc9b07e7778?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
+                   
+                    <div class="gallery_item_footer">
+                        <p>Visual Basic App</p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- End Gallery Item -->
+        </div>
+    </div>
+
+    <script>
+        var list = document.getElementsByClassName('gallery_thumb');
+        
+        for (var i = 0; i < list.length; i++) {
+          var src = list[i].getAttribute('data-image-src');
+          
+          list[i].style.backgroundImage=" url('" + src + "')";
+
+        
+          
+        //   list[i].style.backgroundImage="linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),  url('" + src + "')";
+        }
+
+
+        
+    </script>
+        
+        </body>
+    
+</body>
+</html>
