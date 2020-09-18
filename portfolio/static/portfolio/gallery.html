@@ -61,24 +61,27 @@
      
 
         .gallery_item_footer {
-            min-height: 40px;
+            min-height: 50px;
             width: 100%;
             align-self:flex-end;
             background-color: rgb(228, 228, 228,.7);
             border-top: 1px solid #99cc33;
             padding: 5px;
             /* visibility: hidden; */
+            position: relative;
+            top: 100px;
             opacity: 0;
             display:flex;
             flex-direction: column;
             justify-content: center;
             margin:0px;
-            transition: opacity 1s;
+            transition: opacity 1s, top .5s ease-in-out;
         
         }
 
         .gallery_item:hover .gallery_item_footer{
             opacity: 1;
+            top: 0px;
         }
 
         
@@ -97,6 +100,7 @@
             flex-direction: row;
             justify-content: flex-start;
             width: 100%;
+            min-height: 50px;
         }
         .software_icon{
             align-self: center;
@@ -108,6 +112,12 @@
             background-repeat: no-repeat;
             transition: transform .25s ease-in-out;
             
+        }
+
+        .software_icons a{
+            margin:0px;
+            padding:0px;
+            align-self: center;
         }
 
         .software_icon:hover{
@@ -138,12 +148,13 @@
                    
                     <div class="gallery_item_footer">
                         <div class="software_icons">
-                            <div class="software_icon" data-image-src="img/AI_Icon.png"></div>
+                            <a href="#"><div class="software_icon" data-image-src="img/AI_Icon.png"></div></a> 
                             <div class="software_icon" data-image-src="img/PS_Icon.png"></div>
                             <div class="software_icon" data-image-src="img/AI_Icon.png"></div>
                             <div class="software_icon" data-image-src="img/PS_Icon.png"></div>
                             
                         </div>
+                        <p class="gallery_item_title">Cool Milk Carton Project</p>
                     </div>
                 </div>
             </div>
