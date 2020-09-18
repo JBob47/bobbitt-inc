@@ -39,9 +39,7 @@
             height:175px;
             border: 0px solid red;
             border-radius:3px;
-            
             background-image:attr(data-image-src url);
-            
             background-position: center;
             background-size: 100%;
             overflow: hidden; 
@@ -100,19 +98,28 @@
             justify-content: flex-start;
             width: 100%;
         }
-
-        .software_icons img {
+        .software_icon{
             align-self: center;
-            width: 20px;
-            height: 20px;
-            transition: width .25s ease-in-out, height .25s ease-in-out;
+            margin:2px;
+            width: 25px;
+            height: 25px;
+            background-size:cover;
+            background-image:attr(data-image-src url);
+            background-repeat: no-repeat;
+            transition: transform .25s ease-in-out;
+            
         }
 
-        .software_icons img:hover {
-            width: 40px;
-            height:40px;
+        .software_icon:hover{
+            width: 30px;
+            height: 30px;
+            background-image:attr(data-image-src url);
+            background-repeat: no-repeat;
+            background-size:cover;
+            transform: scale(1.25);
         }
 
+      
         
 
 
@@ -130,12 +137,13 @@
                 <div class="gallery_thumb" data-image-src="https://images.unsplash.com/photo-1553531888-a5892402adce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1700&q=80">
                    
                     <div class="gallery_item_footer">
-                        <dic class="software_icons">
-                            <img src="img\PS_exman_24px.png" alt="">
-                            <img src="img\AI_Icon.png" alt="">
-                            <img src="img\PS_exman_24px.png" alt="">
-                            <img src="img\PS_exman_24px.png" alt="">
-                        </dic>
+                        <div class="software_icons">
+                            <div class="software_icon" data-image-src="img/AI_Icon.png"></div>
+                            <div class="software_icon" data-image-src="img/PS_Icon.png"></div>
+                            <div class="software_icon" data-image-src="img/AI_Icon.png"></div>
+                            <div class="software_icon" data-image-src="img/PS_Icon.png"></div>
+                            
+                        </div>
                     </div>
                 </div>
             </div>
@@ -213,10 +221,19 @@
           
           list[i].style.backgroundImage=" url('" + src + "')";
 
-        
+          var icon_list = list[i].getElementsByClassName('software_icon');
           
-        //   list[i].style.backgroundImage="linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),  url('" + src + "')";
+          for (var j = 0; j < icon_list.length; j++) {
+          var icon_src = icon_list[j].getAttribute('data-image-src');
+          icon_list[j].style.backgroundImage=" url('" + icon_src + "')";
+          
+          }
+
+            
+
+
         }
+
 
 
         
